@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maheshwaran</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/profile.css" rel="stylesheet" type="text/css" />
+    <script src="./profile.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+  <body class="body-wrapper">
+    <p class="spinner" id="spinner">
+      <i class="fa fa-spinner fa-5x"></i>
+    </p>
+    <header id="header" class="header">
+      <nav class="navbar">
+        <a href="#home-page" title="home">
+          <img class="nav-home-button" src="images/letterM.png" />
+        </a>
+        <button id="menu" class="nav-button" onclick="navOnClick()"></button>
+        <ul id="navigation" class="hide-nav-list">
+          <li class="nav-item">
+            <a href="#home-page" onclick="return pageOnClick('home-page');"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" onclick="return pageOnClick('portfolio-page');"
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#contact" onclick="return pageOnClick('contact-page');"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div id="home-page" class="home">
+        <section class="home-banner-section" id="#home">
+          <div class="home-banner">
+            <img
+              class="bannerImage"
+              src="/images/Mahesh_Dev.png"
+              alt="developer"
+            />
+            <div class="home-intro">
+              <h1 class="intro-heading">Maheshwaran</h1>
+              <p class="intro-detail">Engineer @ Accenture</p>
+            </div>
+          </div>
+        </section>
+        <section class="about" id="#about">
+          <h2 class="section-title">About Me</h2>
+        </section>
+      </div>
+      <div id="portfolio-page" class="portfolio">
+        <section class="banner-section" id="#home">
+          <div class="banner">
+            <img class="bannerImage" src="/images/intro.png" alt="developer" />
+            <div class="intro">
+              <h1 class="intro-heading">Maheshwaran</h1>
+              <p class="intro-detail">Engineer @ Accenture</p>
+              <p class="intro-detail">
+                Full Stack Developer | Passionate programmer | 6+ YoE
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="experience" id="#experience">
+          <h2 class="section-title">Experience</h2>
+          <div class="experience-grid">
+            <div class="experince-background">
+              <svg
+                fill="none"
+                viewBox="0 0 1774 809"
+                xmlns="http://www.w3.org/2000/svg"
+                class="JourneyLine__svg"
+                data-v-6202187c=""
+              >
+                <path
+                  d="M-24 687.292C147.04 747.684 354.29 753.55 548 676.765C657.885 633.208 998.481 392.625 1129.34 239.629C1136.51 231.246 1152.9 238.607 1150.74 249.425L1048.7 760.878C1046.57 771.58 1060.62 777.289 1066.64 768.186C1272.67 456.626 1342.12 271.412 1611.73 23.7614C1619.16 16.9373 1630.78 24.1961 1627.95 33.8784C1575.67 212.69 1512.34 468.403 1493.3 664.24C1491.48 682.998 1514.34 692.826 1527.21 679.057C1584.04 618.254 1693.93 503.911 1785 428.315"
+                  class="JourneyLine__path Path__home--3"
+                  data-v-6202187c=""
+                  style="stroke-dasharray: 3902; stroke-dashoffset: 0"
+                ></path>
+              </svg>
+            </div>
+            <article>
+              <div class="experience-section">
+                <div class="logo-container">
+                  <img class="company-logo" src="./images/Accenture_logo.png" />
+                </div>
+                <div class="experience-desc">
+                  <div class="company">
+                    <h2 class="company-name">
+                      Application Development Senior Analyst
+                    </h2>
+                    <p class="company-duration">Apr 2022 - Present</p>
+                  </div>
+                  <ul class="experience-details">
+                    <li>
+                      Built a highly available shopping cart and checkout system
+                      for an e-commerce application.
+                    </li>
+                    <li>
+                      Built the reusable atomic components for single page
+                      application by following best coding practices.
+                    </li>
+                    <li>
+                      Wrote Jest tests for existing components and increased the
+                      code coverage from 68% to 93%.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="experience-section">
+                <div class="logo-container">
+                  <img class="company-logo" src="./images/FIS_Logo.png" />
+                </div>
+                <div class="experience-desc">
+                  <div class="company">
+                    <h2 class="company-name">Programmer Analyst II</h2>
+                    <p class="company-duration">May 2021 - Apr 2022</p>
+                  </div>
+                  <ul class="experience-details">
+                    <li>Worked as a part of pre-paid card development team.</li>
+                    <li>
+                      Developed responsive and accessibility compliant web pages
+                      using react.
+                    </li>
+                    <li>
+                      Built few robust client-side dashboard framework and API
+                      using Node, Express and react.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="experience-section">
+                <div class="logo-container">
+                  <img class="company-logo" src="./images/Novac_logo.png" />
+                </div>
+                <div class="experience-desc">
+                  <div class="company">
+                    <h2 class="company-name">Software Engineer</h2>
+                    <p class="company-duration">Mar 2018 - Apr 2021</p>
+                  </div>
+                  <ul class="experience-details">
+                    <li>
+                      Developed a highly consistent Refundable Security Deposit
+                      (RSD) system for bidders and enabled them to utilize their
+                      RSD amount for payment, which resulted in almost 20%
+                      increase in the returning customer base.
+                    </li>
+                    <li>
+                      Built and scaled the Monthly Accounts Billing system used
+                      by 31K Corporate and individuals across more than 500
+                      automall.
+                    </li>
+                    <li>
+                      Designed and implemented a subscription plan feature in
+                      the auction engine platform. Added functionalities to
+                      reschedule the auction for unsold vehicles, Managed the
+                      plans using authentication and authorization.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="experience-section">
+                <div class="logo-container">
+                  <img
+                    class="company-logo"
+                    src="./images/Ramco_Systems_logo.png"
+                  />
+                </div>
+                <div class="experience-desc">
+                  <div class="company">
+                    <h2 class="company-name">Software Engineer Trainee</h2>
+                    <p class="company-duration">Mar 2017 - Feb 2018</p>
+                  </div>
+                  <ul class="experience-details">
+                    <li>
+                      Worked as a part of finance application development team
+                    </li>
+                    <li>
+                      Automated the updating of sensible live and huge amount of
+                      data.
+                    </li>
+                    <li>
+                      Designed a reporting pipeline to spool data automatically
+                      everyday from SQL servers with zero data loss.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="skills" id="#skills">
+          <h2 class="section-title">My Tech Stack!</h2>
+          <div class="tech-container">
+            <div class="tech-box">
+              <img
+                class="tech-image"
+                src="/images/react-js-icon.svg"
+                alt="React"
+              />
+              <span class="tech-text">React</span>
+            </div>
+            <div class="tech-box">
+              <img class="tech-image" src="/images/html-icon.svg" alt="HTML" />
+              <span class="tech-text">HTML</span>
+            </div>
+            <div class="tech-box">
+              <img class="tech-image" src="/images/css-icon.svg" alt="CSS" />
+              <span class="tech-text">CSS</span>
+            </div>
+            <div class="tech-box">
+              <img
+                class="tech-image"
+                src="/images/javascript-programming-language-icon.svg"
+                alt="JavaScript"
+              />
+              <span class="tech-text">JavaScript</span>
+            </div>
+            <div class="tech-box">
+              <img
+                class="tech-image"
+                src="/images/c-sharp-programming-language-icon.svg"
+                alt="C#"
+              />
+              <span class="tech-text">C#</span>
+            </div>
+            <div class="tech-box">
+              <img
+                class="tech-image"
+                src="/images/nextjs-icon.svg"
+                alt="Next Js"
+              />
+              <span class="tech-text">Next Js</span>
+            </div>
+            <div class="tech-box">
+              <img
+                class="tech-image"
+                src="/images/visual-studio-code-icon.svg"
+                alt="VS Code"
+              />
+              <span class="tech-text">Visual Studio Code</span>
+            </div>
+            <div class="tech-box">
+              <img
+                class="tech-image"
+                src="/images/sql-server-icon.svg"
+                alt="SQL"
+              />
+              <span class="tech-text">SQL Server</span>
+            </div>
+            <div class="tech-box">
+              <img class="tech-image" src="/images/git-icon.svg" alt="Git" />
+              <span class="tech-text">Git</span>
+            </div>
+            <div class="tech-box">
+              <img
+                class="tech-image"
+                src="/images/node-js-icon.svg"
+                alt="Node"
+              />
+              <span class="tech-text">Node Js</span>
+            </div>
+            <div class="tech-box">
+              <img
+                class="tech-image"
+                src="/images/typescript-programming-language-icon.svg"
+                alt="TypeScript"
+              />
+              <span class="tech-text">TypeScript</span>
+            </div>
+            <div class="tech-box">
+              <img
+                class="tech-image"
+                src="/images/jest-js-icon.svg"
+                alt="Jest"
+              />
+              <span class="tech-text">Jest</span>
+            </div>
+            <div class="tech-box">
+              <img
+                class="tech-image"
+                src="/images/azure-icon.svg"
+                alt="Azure"
+              />
+              <span class="tech-text">Azure DevOps</span>
+            </div>
+          </div>
+        </section>
+        <section class="projects" id="#projects">
+          <h2 class="section-title">Projects</h2>
+          <div></div>
+        </section>
+        <section class="awards" id="#awards">
+          <h2 class="section-title">Awards</h2>
+          <div class="award-container">
+            <div class="award-item">
+              <img
+                class="award-icon"
+                src="./images/gold-winner-trophy-icon.svg"
+                alt="trophy"
+              />
+              <p class="award-detail">
+                Received the star of the month award for February - 2021
+                <span class="award-company">@ Novac</span>
+              </p>
+            </div>
+            <div class="award-item">
+              <img
+                class="award-icon"
+                src="./images/gold-winner-trophy-icon.svg"
+                alt="trophy"
+              />
+              <p class="award-detail">
+                Received the award for extraordinary performance in a quarter ( Jul - Sept) 2020, out of 60 developers
+                <span class="award-company">@ Novac</span>
+              </p>
+            </div>
+            <div class="award-item">
+              <img
+                class="award-icon"
+                src="./images/gold-winner-trophy-icon.svg"
+                alt="trophy"
+              />
+              <p class="award-detail">
+                Received the star of the month award for November - 2023
+                <span class="award-company">@ Accenture</span>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="contact-page" class="contact-page">
+        <div class="contact-inner">
+          <div class="contact-info">
+            <h1 class="contact-heading">Maheshwaran</h1>
+            <p class="contact-para">Engineer @ Accenture</p>
+            <p class="contact-para">
+              Ping me or ask me a question using the form.
+            </p>
+          </div>
+        </div>
+        <div class="contact-details">
+          <h2 class="section-title">Get in touch with me!</h2>
+          <div class="contact-form">
+            <input
+              type="text"
+              id="name"
+              class="text"
+              placeholder="Enter your good name"
+            />
+            <input
+              type="text"
+              class="text"
+              id="mail"
+              placeholder="Enter your mail id"
+            />
+            <textarea
+              id="message"
+              placeholder="Enter your comments"
+              rows="4"
+              class="text"
+            ></textarea>
+            <div class="btn-section">
+              <button class="send-btn" id="send" onclick="sendEmail()">
+                Shoot !!!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <ul class="social-media-list">
+        <li class="social-media">
+          <a href="www.facebook.com">
+            <img src="./images/facebook-round-color-icon.svg" />
+          </a>
+        </li>
+        <li class="social-media">
+          <a href="https://www.linkedin.com/in/tmmahesh">
+            <img src="./images/linkedin-app-icon.svg" />
+          </a>
+        </li>
+        <li class="social-media">
+          <a href="www.instagram.com">
+            <img src="./images/ig-instagram-icon.svg" />
+          </a>
+        </li>
+        <li class="social-media">
+          <a href="#github">
+            <img src="./images/github-icon.svg" />
+          </a>
+        </li>
+        <li class="social-media">
+          <a href="#">
+            <img src="./images/twitter-color-icon.svg" />
+          </a>
+        </li>
+        <li class="social-media">
+          <a href="#">
+            <img src="./images/whatsapp-color-icon.svg" />
+          </a>
+        </li>
+      </ul>
+      <div class="copyrights">
+        &#169; 2023 Copyright Maheshwaran - All Rights Reserved.
+      </div>
+    </footer>
+  </body>
+</html>
