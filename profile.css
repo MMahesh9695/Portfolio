@@ -10,10 +10,11 @@ body {
 #spinner {
   animation: spin 1s linear infinite;
   color: red;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   height: 100%;
 }
 
@@ -199,7 +200,8 @@ ul li a {
 .experience,
 .skills,
 .awards,
-.projects {
+.projects,
+.about {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -441,7 +443,7 @@ ul li a {
   line-height: 28px;
   font-weight: 400;
 }
-.award-company{
+.award-company {
   color: #e6006c;
 }
 @media screen and (min-width: 1024px) {
@@ -536,7 +538,8 @@ ul li a {
   .experience,
   .skills,
   .awards,
-  .projects {
+  .projects,
+  .about {
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -661,5 +664,39 @@ ul li a {
     margin: 0;
     text-align: center;
     font-family: inherit;
+  }
+  .project-section {
+    display: grid;
+    row-gap: 64px;
+    column-gap: 64px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-img {
+    width: 280px;
+    height: 280px;
+  }
+  .project-heading {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #e6006c;
+    margin: 0;
+    padding: 0;
+  }
+  .project-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 24px 24px 24px;
   }
 }

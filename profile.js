@@ -5,7 +5,7 @@ document.onreadystatechange = function () {
   } else {
     document.querySelector("#spinner").style.display = "none";
     document.querySelector("body").style.visibility = "visible";
-    pageOnClick("home-page");
+    pageOnClick("portfolio-page");
   }
 };
 
