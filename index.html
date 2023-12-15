@@ -18,7 +18,6 @@
       href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
       rel="stylesheet"
     />
-    <link href="/reset.css" rel="stylesheet" type="text/css" />
     <link href="/profile.css" rel="stylesheet" type="text/css" />
     <script src="./profile.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -32,20 +31,36 @@
         <a href="#home-page" title="home">
           <img class="nav-home-button" src="images/letterM.png" />
         </a>
-        <button id="menu" class="nav-button" onclick="navOnClick()"></button>
-        <ul id="navigation" class="hide-nav-list">
+        <button
+          id="menu"
+          class="nav-button"
+          onclick="return navOnClick();"
+        ></button>
+        <ul id="navigation" class="nav-list">
           <li class="nav-item">
-            <a href="#home-page" onclick="return pageOnClick('home-page');"
+            <a
+              class="nav-item-link"
+              href="#home-page"
+              id="home-page-link"
+              onclick="return pageOnClick('home-page');"
               >Home</a
             >
           </li>
           <li class="nav-item">
-            <a href="#portfolio" onclick="return pageOnClick('portfolio-page');"
+            <a
+              class="nav-item-link"
+              href="#portfolio-page"
+              id="portfolio-page-link"
+              onclick="return pageOnClick('portfolio-page');"
               >Portfolio</a
             >
           </li>
           <li class="nav-item">
-            <a href="#contact" onclick="return pageOnClick('contact-page');"
+            <a
+              class="nav-item-link"
+              href="#contact-page"
+              id="contact-page-link"
+              onclick="return pageOnClick('contact-page');"
               >Contact</a
             >
           </li>
@@ -318,37 +333,41 @@
         <section class="projects" id="#projects">
           <h2 class="section-title">Projects</h2>
           <div class="project-section">
-          <div class="project-container">
-            <img class="project-img" src="./images/coding.png" />
-            <div class="project-details">
-              <h3 class="project-heading">Food ordering App</h3>
-              <ul class="experience-details">
-                <li>
-                  Designed and Developed a simple food ordering application.
-                </li>
-                <li>
-                  It is used to list restaurants, view food items and add items to the
-                  cart.
-                </li>
-                <li>
-                  <b>Technologies:</b> React, Node, Express, Redux and Mongo
-                </li>
-              </ul>
+            <div class="project-container">
+              <img class="project-img" src="./images/coding.png" />
+              <div class="project-details">
+                <h3 class="project-heading">Food ordering App</h3>
+                <ul class="experience-details">
+                  <li>
+                    Designed and Developed a simple food ordering application.
+                  </li>
+                  <li>
+                    It is used to list restaurants, view food items and add
+                    items to the cart.
+                  </li>
+                  <li>
+                    <b>Technologies:</b> React, Node, Express, Redux and Mongo
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-container">
+              <img class="project-img" src="./images/coding.png" />
+              <div class="project-details">
+                <h3 class="project-heading">Natural Language Processing</h3>
+                <ul class="experience-details">
+                  <li>
+                    Built a Natural Language Processing framework with sentiment
+                    analysis.
+                  </li>
+                  <li>
+                    It analyze user's feedbacks, posts, and tweets and return
+                    whethers is good or bad.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="project-container">
-            <img class="project-img" src="./images/coding.png" />
-            <div class="project-details">
-              <h3 class="project-heading">
-                Natural Language Processing
-              </h3>
-              <ul class="experience-details">
-                <li>Built a Natural Language Processing framework with sentiment analysis.</li>
-                <li>It analyze user's feedbacks, posts, and tweets and return whethers is good or bad.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
         </section>
         <section class="awards" id="#awards">
           <h2 class="section-title">Awards</h2>

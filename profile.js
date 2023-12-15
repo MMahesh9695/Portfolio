@@ -5,7 +5,10 @@ document.onreadystatechange = function () {
   } else {
     document.querySelector("#spinner").style.display = "none";
     document.querySelector("body").style.visibility = "visible";
-    pageOnClick("portfolio-page");
+    const pageName = window.location.hash;
+    pageName
+      ? pageOnClick(pageName.substring(1, pageName.length))
+      : pageOnClick("portfolio-page");
   }
 };
 
@@ -14,17 +17,20 @@ const pageNames = ["home-page", "portfolio-page", "contact-page"];
 function pageOnClick(pageName) {
   pageNames.forEach((page) => {
     const selectedPage = document.querySelector(`#${page}`);
+    const linkClassList = document.querySelector(`#${page}-link`).classList;
     if (page === pageName) {
       selectedPage.style.display = "flex";
+      linkClassList.add("active");
     } else {
       selectedPage.style.display = "none";
+      linkClassList.remove("active");
     }
   });
   const navClassList = document.querySelector("#navigation").classList;
   const headerClassList = document.querySelector("#header").classList;
   const btnClassList = document.querySelector("#menu").classList;
 
-  navClassList.replace("nav-list", "hide-nav-list");
+  navClassList.remove("nav-list-open");
   btnClassList.remove("nav-button-close");
   headerClassList.remove("header-menu");
   window.scrollTo(0, 0);
@@ -35,14 +41,14 @@ function navOnClick() {
   const btnClassList = document.querySelector("#menu").classList;
   const headerClassList = document.querySelector("#header").classList;
 
-  if (navClassList.contains("hide-nav-list")) {
-    navClassList.replace("hide-nav-list", "nav-list");
-    btnClassList.add("nav-button-close");
-    headerClassList.add("header-menu");
-  } else {
-    navClassList.replace("nav-list", "hide-nav-list");
+  if (navClassList.contains("nav-list-open")) {
+    navClassList.remove("nav-list-open");
     btnClassList.remove("nav-button-close");
     headerClassList.remove("header-menu");
+  } else {
+    navClassList.add("nav-list-open");
+    btnClassList.add("nav-button-close");
+    headerClassList.add("header-menu");
   }
 }
 
