@@ -504,6 +504,14 @@ body {
   width: 100%;
   padding: 0 24px 24px 24px;
 }
+.msg-success {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+.input-error {
+  border: 1px solid red;
+}
 
 @media screen and (min-width: 1024px) {
   .body-wrapper {

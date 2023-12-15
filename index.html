@@ -9,9 +9,16 @@
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="300" />
     <meta property="og:image:height" content="300" />
-    <meta property="og:url" content="https://maheshwaran-portfolio.netlify.app/" />
+    <meta
+      property="og:url"
+      content="https://maheshwaran-portfolio.netlify.app/"
+    />
     <title>Maheshwaran</title>
-    <link rel="icon" type="image/x-icon" href="./images/computer-businessman-icon.svg">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/computer-businessman-icon.svg"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -36,7 +43,11 @@
     </p>
     <header id="header" class="header">
       <nav class="navbar">
-        <a href="#home-page" title="home">
+        <a
+          href="#home-page"
+          title="home"
+          onclick="return pageOnClick('home-page');"
+        >
           <img class="nav-home-button" src="images/letterM.png" />
         </a>
         <button
@@ -435,24 +446,31 @@
               id="name"
               class="text"
               placeholder="Enter your good name"
+              required
+              pattern="^([a-zA-Z]+\s)*[a-zA-Z]+$"
             />
             <input
-              type="text"
+              type="email"
               class="text"
               id="mail"
               placeholder="Enter your mail id"
+              required
+              pattern="^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
             />
             <textarea
               id="message"
               placeholder="Enter your comments"
               rows="4"
               class="text"
+              required
+              maxlength="1000"
             ></textarea>
             <div class="btn-section">
               <button class="send-btn" id="send" onclick="sendEmail()">
                 Shoot !!!
               </button>
             </div>
+            <div class="msg-success" id="msg-success"></div>
           </div>
         </div>
       </div>
